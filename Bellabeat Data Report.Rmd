@@ -1,0 +1,183 @@
+---
+title: "Bellabeat Data Report"
+author: "Ajinkya Desai"
+date: "2023-02-01"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+##Introduction
+Bellabeat is a high-tech company that manufactures health-focused smart products including Bellabeat app, Leaf, Time and Spring. It also offers a subscription-based membership program for users giving them access to personalised guidance on having a healthy lifestyle. Bellabeat has positioned itself as a tech-driven wellness company for women.
+
+Bellabeat has been investing extensively on digital marketing including Google Search and being active on social media platforms. The co-founder Sršen knows that an analysis of Bellabeat’s available consumer data would reveal more opportunities for growth.
+
+###1)Ask:
+Questions for the analysis:
+1. What are some trends in smart device usage?
+2. How could these trends apply to Bellabeat customers?
+3. How could these trends help influence Bellabeat’s marketing strategy?   
+
+###2)Prepare:
+Installing and loading of packages:
+
+```{r}
+install.packages("tidyverse")
+install.packages("here")
+install.packages("skimr")
+install.packages("janitor")
+install.packages("dylyr")
+install.packages("ggplot2")
+
+library("tidyverse")
+library("here")
+library("skimr")
+library("janitor")
+library("dplyr")
+library("ggplot2")
+```
+
+Importing datasets:
+
+```{r}
+setwd("/cloud/project/Bellabeat Fitness data")
+daily_activity <- read_csv("dailyActivity_merged.csv")
+daily_calories <- read_csv("dailyCalories_merged.csv")
+daily_intensities <- read_csv("dailyIntensities_merged.csv")
+daily_steps <- read_csv("dailySteps_merged.csv")
+heartrate_sec <- read_csv("heartrate_seconds_merged.csv")
+minute_METs <- read_csv("minuteMETsNarrow_merged.csv")
+sleep_day <- read_csv("sleepDay_merged.csv")
+weight_log <- read_csv("weightLogInfo_merged.csv")
+```
+
+
+
+###3)Process:
+Viewing the data frames:
+
+```{r message=FALSE, warning=FALSE}
+head(daily_activity)
+head(daily_calories)
+head(daily_intensities)
+head(daily_steps)
+head(heartrate_sec)
+head(minute_METs)
+head(sleep_day)
+head(weight_log)
+
+View(daily_activity)
+View(daily_intensities)
+View(daily_calories)
+View(daily_steps)
+```
+
+
+###4)Analyze:
+Summarizing the data:
+```{r}
+n_distinct(daily_activity$Id)
+n_distinct(daily_calories$Id)
+n_distinct(daily_intensities$Id)
+n_distinct(daily_steps$Id)
+n_distinct(heartrate_sec$Id)
+n_distinct(minute_METs$Id)
+n_distinct(sleep_day$Id)
+n_distinct(weight_log$Id)
+
+nrow(daily_activity)
+nrow(daily_calories)
+nrow(daily_intensities)
+nrow(daily_steps)
+nrow(heartrate_sec)
+nrow(minute_METs)
+nrow(sleep_day)
+nrow(weight_log)
+
+daily_activity %>%
+  select(TotalSteps,TotalDistance,SedentaryMinutes,LightlyActiveMinutes,
+         FairlyActiveMinutes,VeryActiveMinutes,Calories) %>%
+  summary()
+
+heartrate_sec %>%
+  select(Value) %>%
+  summary()
+
+minute_METs %>%
+  select(METs) %>%
+  summary()
+
+sleep_day %>%
+  select(TotalTimeInBed, TotalMinutesAsleep,TotalSleepRecords) %>%
+  summary()
+
+weight_log %>%
+  select(WeightPounds, BMI) %>%
+  summary()
+
+```
+
+###6)Share:
+```{r}
+
+##The Relationship between Very Active Minutes vs Total Daily Calories Burned
+ggplot(data=daily_activity)+
+         geom_smooth(mapping=aes(x=VeryActiveMinutes, y=Calories))+
+         geom_point(mapping=aes(x=VeryActiveMinutes, y=Calories))+
+         labs(title = "The Relationship between Very Active Minutes vs Total Daily Calories Burned", caption = "Data collected by Ajinkya Desai")
+
+##The Relationship between Total Daily Steps vs Total Daily Calories Burned
+ggplot(data=daily_activity)+
+  geom_smooth(mapping=aes(x=TotalSteps, y=Calories))+
+  geom_point(mapping=aes(x=TotalSteps, y=Calories))+
+  labs(title = "The Relationship between Total Daily Stepss vs Total Daily Calories Burned", caption = "Data collected by Ajinkya Desai")
+
+
+##The Relationship between Total  Distance vs Total Daily Calories Burned
+ggplot(data=daily_activity)+
+  geom_smooth(mapping=aes(x=TotalDistance, y=Calories))+
+  geom_point(mapping=aes(x=TotalDistance, y=Calories, color=TotalDistance))+
+  labs(title = "The Relationship between Total Distance vs Total Daily Calories Burned", caption = "Data collected by Ajinkya Desai")
+
+##The Relationship between Total Minutes Asleep vs Total Time In Bed 
+ggplot(data=sleep_day)+
+  geom_smooth(mapping=aes(x=TotalMinutesAsleep, y=TotalTimeInBed))+
+  geom_point(mapping=aes(x=TotalMinutesAsleep, y=TotalTimeInBed))+
+  labs(title = "The Relationship between Total Minutes Asleep vs Total Time In Bed", caption = "Data collected by Ajinkya Desai")
+
+```
+
+
+###5)Act:
+Bellabeat has been successful since its foundation by empowering women though providing data on their activity, sleep, stress, hydration levels, and reproductive health. Based on analyzing how Fitbit consumers use and respond to features, recommendations can be made to promote further growth for Bellabeat.
+
+The Bellabeat app should be completely transformed and revamped. Rather than simply providing data on user’s health, the app should further encourage users to meet fitness goals and become a social media platform.
+
+The CDC recommends working out with a friend in order to feel more motivated, be more adventurous in trying workouts, and to become consistent. The CDC even recommends the use of a social media workout app to connect with friends and reach your goals. The Bellabeat app could become that social media workout app that women turn to, by creating a sisterhood of supportive women ready to prioritize their health.
+
+Recommendations for Bellabeat app:
+1. Enable social networking so users can post their favorite workouts, wellness tips, healthy meals, etc.
+
+2. Enable users to add friends and view each other’s activity.
+
+3. Create weekly fitness and wellness challenges to encourage use.
+
+4. Have health and fitness companies pay for advertising.
+
+5. Recommend users to get 10,000 steps a day and enable alert notifications to encourage users to meet goal.
+
+6. Recommend users to get at least 7 hours of sleep a night and enable alert notifications to encourage users to meet this.
+
+7. Recommend users get 75 minutes of vigorous activity a week and enable alert notifications to entourage users to meet this.
+
+8. Encourage users to enter in weight and height to track BMI.
+
+9. If users are interested in losing weight, enable notifications to keep users on track to burn necessary calories to meet goal.
+
+10. Enable alert notifications if user’s resting heart rate varies significantly from their normal.
+
+11. Enable notifications to encourage activity if a user has spent an hour in bed awake.
+
+12. Enable notifications to encourage activity if a user has been sedentary for an extended period of time.
+
+

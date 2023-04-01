@@ -18,9 +18,10 @@ To analyze the data and provide recommendations, I will follow the Data Analysis
 
 ###1)Ask:
 Questions for the analysis:
-1. What are some trends in smart device usage?
-2. How could these trends apply to Bellabeat customers?
-3. How could these trends help influence Bellabeat’s marketing strategy?   
+1.	What are some current patterns in the utilization of intelligent devices?
+2.	In what ways could these patterns be relevant to Bellabeat’s clientele?
+3.	How might these patterns contribute to shaping Bellabeat’s marketing approach?
+  
 
 ###2)Prepare:
 Installing and loading of packages:
@@ -153,35 +154,20 @@ ggplot(data=sleep_day)+
 
 
 ###5)Act:
-Bellabeat has been successful since its foundation by empowering women though providing data on their activity, sleep, stress, hydration levels, and reproductive health. Based on analyzing how Fitbit consumers use and respond to features, recommendations can be made to promote further growth for Bellabeat.
+Bellabeat has achieved success by empowering women through providing data on their activity, sleep, stress, hydration levels, and reproductive health. By analyzing how Fitbit users engage with features, recommendations can be made to enhance Bellabeat’s growth.
+To increase its reach, Bellabeat should significantly transform and upgrade its app. Rather than simply offering health data, the app should encourage users to reach their fitness goals and become a social media platform.
+The Centers for Disease Control and Prevention (CDC) recommends working out with friends to boost motivation, experiment with workouts, and maintain consistency. The CDC even suggests using social media workout apps to connect with friends and achieve fitness goals. Bellabeat’s app could serve as the social media workout app for women, creating a supportive community of women dedicated to prioritizing their health.
 
-The Bellabeat app should be completely transformed and revamped. Rather than simply providing data on user’s health, the app should further encourage users to meet fitness goals and become a social media platform.
-
-The CDC recommends working out with a friend in order to feel more motivated, be more adventurous in trying workouts, and to become consistent. The CDC even recommends the use of a social media workout app to connect with friends and reach your goals. The Bellabeat app could become that social media workout app that women turn to, by creating a sisterhood of supportive women ready to prioritize their health.
-
-Recommendations for Bellabeat app:
-1. Enable social networking so users can post their favorite workouts, wellness tips, healthy meals, etc.
-
-2. Enable users to add friends and view each other’s activity.
-
-3. Create weekly fitness and wellness challenges to encourage use.
-
-4. Have health and fitness companies pay for advertising.
-
-5. Recommend users to get 10,000 steps a day and enable alert notifications to encourage users to meet goal.
-
-6. Recommend users to get at least 7 hours of sleep a night and enable alert notifications to encourage users to meet this.
-
-7. Recommend users get 75 minutes of vigorous activity a week and enable alert notifications to entourage users to meet this.
-
-8. Encourage users to enter in weight and height to track BMI.
-
-9. If users are interested in losing weight, enable notifications to keep users on track to burn necessary calories to meet goal.
-
-10. Enable alert notifications if user’s resting heart rate varies significantly from their normal.
-
-11. Enable notifications to encourage activity if a user has spent an hour in bed awake.
-
-12. Enable notifications to encourage activity if a user has been sedentary for an extended period of time.
-
-
+Recommendations for Bellabeat’s app include:
+1.	Adding social networking features to enable users to share their favorite workouts, wellness tips, healthy meals, etc.
+2.	Enabling users to add friends and view each other’s activity.
+3.	Creating weekly fitness and wellness challenges to promote usage.
+4.	Allowing health and fitness companies to advertise on the app.
+5.	Setting a daily goal of 10,000 steps and sending alert notifications to encourage users to meet the goal.
+6.	Recommending users to get at least 7 hours of sleep per night and enabling alert notifications to help them meet the goal.
+7.	Suggesting users to engage in 75 minutes of vigorous activity per week and enabling alert notifications to encourage them to meet this goal.
+8.	Encouraging users to input their weight and height to track their BMI.
+9.	Sending notifications to keep users on track to burn the necessary calories if they express interest in losing weight.
+10.	Enabling alert notifications if a user’s resting heart rate deviates significantly from their normal range.
+11.	Sending notifications to encourage activity if a user has been awake in bed for an hour.
+12.	Sending notifications to encourage activity if a user has been sedentary for an extended period of time.

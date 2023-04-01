@@ -8,11 +8,11 @@ output:
 ---
 
 ##Introduction
-The Bellabeat app offers health-related data on activity, sleep, stress, menstrual cycle, and mindfulness habits. By using this app, users can gain a better understanding of their current habits and make healthy choices. The app connects with Bellabeat's smart wellness products, including the Leaf tracker, which can be worn as a bracelet, necklace, or clip and tracks activity, sleep, and stress, and the Time watch, which combines a classic look with smart technology to track activity, sleep, and stress. The Spring water bottle is another product that tracks daily water intake using smart technology and connects to the Bellabeat app.
+The Bellabeat app delivers health-related information on various aspects such as activity, sleep, stress, menstrual cycle, and mindfulness habits, which empowers users to make informed decisions towards leading a healthier lifestyle. In addition, Bellabeat offers smart wellness products such as the Leaf tracker, which can be worn as a bracelet, necklace, or clip and monitors activity, sleep, and stress, and the Time watch, which combines classic design with smart technology to track activity, sleep, and stress. Furthermore, the Spring water bottle, another product from Bellabeat, utilizes smart technology to track daily water intake and can be synced with the Bellabeat app.
 
-Bellabeat also provides a membership program that offers personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on the user's lifestyle and goals. The company aims to gain insights into how people use their smart devices and identify growth opportunities by focusing on their products and analyzing FitBit Fitness Tracker Data.
+Furthermore, Bellabeat's membership program provides personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness to users based on their individual goals and lifestyle. The company is committed to gaining insights into smart device usage by analyzing FitBit Fitness Tracker Data, identifying growth opportunities, and developing innovative products accordingly.
 
-Bellabeat has been investing extensively on digital marketing including Google Search and being active on social media platforms. The co-founder Sršen knows that an analysis of Bellabeat’s available consumer data would reveal more opportunities for growth.
+Bellabeat has prioritized digital marketing, leveraging platforms such as Google Search and social media to reach a larger audience. The co-founder Sršen recognizes the potential for growth that analyzing consumer data holds, and has made efforts to harness this information to enhance the company's strategy.
 
 To analyze the data and provide recommendations, I will follow the Data Analysis Process: Ask, Prepare, Process, Analyze, Share, and Act.
 

@@ -6,7 +6,9 @@ Ajinkya Desai
 Introduction
 
 The Bellabeat app delivers health-related information on various aspects such as activity, sleep, stress, menstrual cycle, and mindfulness habits, which empowers users to make informed decisions toward leading a healthier lifestyle. In addition, Bellabeat offers smart wellness products such as the Leaf tracker, which can be worn as a bracelet, necklace, or clip and monitors activity, sleep, and stress, and the Time watch, which combines classic design with smart technology to track activity, sleep, and stress. Furthermore, the Spring water bottle, another product from Bellabeat, utilizes smart technology to track daily water intake and can be synced with the Bellabeat app.
+
 Furthermore, Bellabeat's membership program provides users with personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their individual goals and lifestyle. The company is committed to gaining insights into smart device usage by analyzing FitBit Fitness Tracker Data, identifying growth opportunities, and developing innovative products accordingly.
+
 Bellabeat has prioritized digital marketing, leveraging platforms such as Google Search and social media to reach a larger audience. The co-founder Sršen recognizes the potential for growth that analyzing consumer data holds and has made efforts to harness this information to enhance the company's strategy.
 
 1)Ask: Questions for the analysis:
